@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
-    "dev": "cross-env NODE_ENV=development nodemon app"
+    "dev": "cross-env NODE_ENV=development nodemon app",
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\""
   },
   "keywords": [],
   "author": "0xHaris",
@@ -23,5 +24,8 @@
     "nodemon": "^2.0.21",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4"
   }
 }
